@@ -55,8 +55,7 @@ class ChangeTest extends PHPUnit\Framework\TestCase
         $this->expectException('InvalidArgumentException', 'Cannot make change for negative value');
         findFewestCoins(array(1, 2, 5), -5);
     }
-  
-    # bonus point if it pass these tests
+      
     public function testPossibleChangeWithoutUnitCoinsAvailable()
     {
         $this->markTestSkipped();
